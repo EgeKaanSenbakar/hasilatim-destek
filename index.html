@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasılatım - Destek</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+      min-height: 100vh;
+      color: #fff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f59e0b, #ea580c);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 16px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #a1a1aa;
+      font-size: 14px;
+    }
+    .card {
+      background: #27272a;
+      border: 1px solid #3f3f46;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card p {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .contact-btn {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #f59e0b, #ea580c);
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 16px;
+      transition: opacity 0.2s;
+    }
+    .contact-btn:hover {
+      opacity: 0.9;
+    }
+    .faq-item {
+      border-bottom: 1px solid #3f3f46;
+      padding: 16px 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .faq-item:first-child {
+      padding-top: 0;
+    }
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .faq-a {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #52525b;
+      font-size: 12px;
+    }
+    .footer a {
+      color: #f59e0b;
+      text-decoration: none;
+    }
+    .legal-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #3f3f46;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      flex: 1;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .legal-link:hover {
+      background: #52525b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/EgeKaanSenbakar/hasilatim-support/main/hasilatim.png" alt="Hasılatım Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+      </div>
+      <h1>Hasılatım</h1>
+      <p class="subtitle">Minibüs Hasılat Takip Uygulaması</p>
+    </div>
+
+    <div class="card">
+      <h2>📧 İletişim</h2>
+      <p>Sorularınız, önerileriniz veya yaşadığınız sorunlar için bize ulaşabilirsiniz.</p>
+      <a href="mailto:dev.egekaan@gmail.com" class="contact-btn">E-posta Gönder</a>
+    </div>
+
+    <div class="card">
+      <h2>📋 Yasal</h2>
+      <div style="display: flex; gap: 12px; margin-top: 8px;">
+        <a href="legal.html" class="legal-link" style="flex: 1;">🔒 Gizlilik Politikası</a>
+        <a href="legal.html" class="legal-link" style="flex: 1;">📜 Kullanım Koşulları</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>❓ Sıkça Sorulan Sorular</h2>
+      
+      <div class="faq-item">
+        <p class="faq-q">Verilerim güvende mi?</p>
+        <p class="faq-a">Evet, tüm verileriniz Firebase (Google Cloud) altyapısında güvenli bir şekilde saklanmaktadır.</p>
+      </div>
+      
+      <div class="faq-item">
+        <p class="faq-q">Birden fazla araç ekleyebilir miyim?</p>
+        <p class="faq-a">Evet, dilediğiniz kadar araç ekleyebilir ve her birinin hasılatını ayrı ayrı takip edebilirsiniz.</p>
+      </div>
+      
+      <div class="faq-item">
+        <p class="faq-q">Hesabımı nasıl silebilirim?</p>
+        <p class="faq-a">Profil → Hesap Bilgileri → Hesabımı Sil yolunu izleyerek hesabınızı kalıcı olarak silebilirsiniz.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📱 Uygulama Hakkında</h2>
+      <p><strong>Versiyon:</strong> 1.0</p>
+      <p style="margin-top: 8px;"><strong>Geliştirici:</strong> Ege Kaan Şenbakar</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Hasılatım. Tüm hakları saklıdır.</p>
+      <p style="margin-top: 8px;">
+        <a href="mailto:dev.egekaan@gmail.com">dev.egekaan@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
