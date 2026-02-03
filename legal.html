@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasılatım - Yasal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+      min-height: 100vh;
+      color: #fff;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+      margin: 0 auto 16px;
+      overflow: hidden;
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .tabs {
+      display: flex;
+      background: #27272a;
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 24px;
+    }
+    .tab {
+      flex: 1;
+      padding: 12px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      color: #a1a1aa;
+      transition: all 0.2s;
+      border: none;
+      background: none;
+    }
+    .tab.active {
+      background: #f59e0b;
+      color: #fff;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .update-date {
+      color: #f59e0b;
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .intro {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .section {
+      background: #27272a;
+      border: 1px solid #3f3f46;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: #f59e0b;
+    }
+    .section p {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+    .section ul {
+      color: #a1a1aa;
+      font-size: 14px;
+      line-height: 1.8;
+      margin-left: 20px;
+      margin-bottom: 12px;
+    }
+    .section ul li {
+      margin-bottom: 8px;
+    }
+    .highlight {
+      color: #fff;
+      font-weight: 500;
+    }
+    .contact-box {
+      background: #3f3f46;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+    .contact-box p {
+      margin-bottom: 4px;
+    }
+    .contact-box a {
+      color: #f59e0b;
+      text-decoration: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+    }
+    table th, table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #3f3f46;
+      color: #a1a1aa;
+      font-size: 14px;
+    }
+    table th {
+      color: #fff;
+      font-weight: 600;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #52525b;
+      font-size: 12px;
+    }
+    .back-link {
+      display: inline-block;
+      color: #f59e0b;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    a {
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Destek Sayfasına Dön</a>
+    
+    <div class="header">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/EgeKaanSenbakar/hasilatim-support/main/hasilatim.png" alt="Hasılatım Logo">
+      </div>
+      <h1>Yasal</h1>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('privacy')">🔒 Gizlilik Politikası</button>
+      <button class="tab" onclick="showTab('terms')">📜 Kullanım Koşulları</button>
+    </div>
+
+    <!-- GIZLILIK POLITIKASI -->
+    <div id="privacy" class="tab-content active">
+      <p class="update-date">Son Güncelleme: Ocak 2025</p>
+      <p class="intro">Hasılatım uygulamasını ("Uygulama") kullandığınız için teşekkür ederiz. Bu gizlilik politikası, kişisel verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklamaktadır.</p>
+
+      <div class="section">
+        <h2>Veri Sorumlusu</h2>
+        <p>Bu uygulama bireysel bir geliştirici tarafından sunulmaktadır.</p>
+        <div class="contact-box">
+          <p><span class="highlight">Ad Soyad:</span> Ege Kaan Şenbakar</p>
+          <p><span class="highlight">E-posta:</span> <a href="mailto:dev.egekaan@gmail.com">dev.egekaan@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Toplanan Veriler</h2>
+        <p>Uygulama, hizmet sunabilmek için aşağıdaki verileri toplamaktadır:</p>
+        <table>
+          <tr>
+            <th>Veri Türü</th>
+            <th>Açıklama</th>
+          </tr>
+          <tr>
+            <td>E-posta Adresi</td>
+            <td>Hesap oluşturma ve giriş işlemleri için</td>
+          </tr>
+          <tr>
+            <td>Araç Bilgileri</td>
+            <td>Plaka, araç adı (kullanıcı tarafından girilen)</td>
+          </tr>
+          <tr>
+            <td>Hasılat Kayıtları</td>
+            <td>Günlük gelir, gider ve diğer finansal veriler</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Verilerin Kullanım Amacı</h2>
+        <p>Toplanan veriler yalnızca aşağıdaki amaçlarla kullanılmaktadır:</p>
+        <ul>
+          <li>Kullanıcı hesabı oluşturma ve kimlik doğrulama</li>
+          <li>Hasılat ve gider kayıtlarının saklanması</li>
+          <li>Raporlama ve istatistik hesaplama</li>
+          <li>Uygulama deneyiminin iyileştirilmesi</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Verilerin Saklanması</h2>
+        <ul>
+          <li>Verileriniz <span class="highlight">Firebase (Google Cloud)</span> altyapısında güvenli şekilde saklanmaktadır.</li>
+          <li>Veriler Avrupa Birliği veya Amerika Birleşik Devletleri'ndeki sunucularda barındırılabilir.</li>
+          <li>Google'ın gizlilik politikası için: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Verilerin Paylaşımı</h2>
+        <p>Kişisel verileriniz üçüncü taraflarla <span class="highlight">satılmaz veya paylaşılmaz</span>. Veriler yalnızca:</p>
+        <ul>
+          <li>Yasal zorunluluk halinde yetkili makamlarla</li>
+          <li>Hizmet sağlayıcı (Firebase/Google) ile teknik altyapı kapsamında</li>
+        </ul>
+        <p>paylaşılabilir.</p>
+      </div>
+
+      <div class="section">
+        <h2>Veri Güvenliği</h2>
+        <ul>
+          <li>Tüm veriler şifreli bağlantı (SSL/TLS) üzerinden iletilir</li>
+          <li>Firebase Authentication ile güvenli kimlik doğrulama sağlanır</li>
+          <li>Verilerinize yalnızca siz erişebilirsiniz</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Kullanıcı Hakları</h2>
+        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aşağıdaki haklara sahipsiniz:</p>
+        <ul>
+          <li>Verilerinizin işlenip işlenmediğini öğrenme</li>
+          <li>Verilerinize erişim talep etme</li>
+          <li>Verilerinizin düzeltilmesini veya silinmesini isteme</li>
+          <li>Verilerinizin aktarıldığı üçüncü kişileri öğrenme</li>
+          <li>İşlenen verilerin analiz edilmesini isteme</li>
+          <li>Verilerin kanuna aykırı işlenmesi sebebiyle zararın giderilmesini talep etme</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Hesap Silme</h2>
+        <p>Hesabınızı ve tüm verilerinizi silmek için uygulama içinden veya <a href="mailto:dev.egekaan@gmail.com">dev.egekaan@gmail.com</a> adresine e-posta göndererek talepte bulunabilirsiniz.</p>
+        <p>Silme işlemi <span class="highlight">30 gün</span> içinde tamamlanır.</p>
+      </div>
+
+      <div class="section">
+        <h2>Çocukların Gizliliği</h2>
+        <p>Bu uygulama 18 yaş altındaki kullanıcılara yönelik değildir. Bilerek çocuklardan kişisel veri toplamayız.</p>
+      </div>
+
+      <div class="section">
+        <h2>Değişiklikler</h2>
+        <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
+      </div>
+
+      <div class="section">
+        <h2>İletişim</h2>
+        <p>Gizlilik ile ilgili sorularınız için:</p>
+        <div class="contact-box">
+          <p><span class="highlight">E-posta:</span> <a href="mailto:dev.egekaan@gmail.com">dev.egekaan@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- KULLANIM KOSULLARI -->
+    <div id="terms" class="tab-content">
+      <p class="update-date">Son Güncelleme: Ocak 2025</p>
+      <p class="intro">Hasılatım uygulamasını ("Uygulama") kullanmadan önce lütfen bu kullanım koşullarını okuyunuz.</p>
+
+      <div class="section">
+        <h2>Hizmetin Tanımı</h2>
+        <p>Hasılatım, araç sahiplerinin günlük hasılat, gider ve finansal kayıtlarını takip etmelerine yardımcı olan bir mobil uygulamadır.</p>
+      </div>
+
+      <div class="section">
+        <h2>Kabul</h2>
+        <p>Uygulamayı indirerek, kurarak veya kullanarak bu kullanım koşullarını kabul etmiş sayılırsınız.</p>
+      </div>
+
+      <div class="section">
+        <h2>Kullanıcı Sorumlulukları</h2>
+        <p>Uygulama kullanıcısı olarak:</p>
+        <ul>
+          <li>Doğru ve güncel bilgiler sağlamayı kabul edersiniz</li>
+          <li>Hesap bilgilerinizi gizli tutmakla sorumlusunuz</li>
+          <li>Uygulamayı yalnızca yasal amaçlarla kullanacağınızı taahhüt edersiniz</li>
+          <li>Girdiğiniz verilerin doğruluğundan siz sorumlusunuz</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Hizmetin Kapsamı</h2>
+        <ul>
+          <li>Uygulama "olduğu gibi" sunulmaktadır</li>
+          <li>Hizmetin kesintisiz veya hatasız olacağı garanti edilmemektedir</li>
+          <li>Özellikler önceden haber verilmeksizin değiştirilebilir veya kaldırılabilir</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Sorumluluk Sınırlaması</h2>
+        <ul>
+          <li>Uygulama finansal tavsiye veya muhasebe hizmeti sunmamaktadır</li>
+          <li>Girilen veriler ve hesaplamalar yalnızca bilgi amaçlıdır</li>
+          <li>Vergi veya resmi işlemler için yetkili muhasebeciye danışınız</li>
+          <li>Veri kaybı veya yanlış hesaplamalardan doğabilecek zararlardan geliştirici sorumlu tutulamaz</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Fikri Mülkiyet</h2>
+        <ul>
+          <li>Uygulama ve içeriği fikri mülkiyet hakları ile korunmaktadır</li>
+          <li>Uygulamayı kopyalayamaz, değiştiremez veya dağıtamazsınız</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Hesap Sonlandırma</h2>
+        <ul>
+          <li>Hesabınızı istediğiniz zaman silebilirsiniz</li>
+          <li>Kullanım koşullarının ihlali halinde hesabınız askıya alınabilir</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Değişiklikler</h2>
+        <p>Bu kullanım koşulları önceden haber verilmeksizin güncellenebilir. Güncel koşullar uygulama içinden erişilebilir olacaktır.</p>
+      </div>
+
+      <div class="section">
+        <h2>Uygulanacak Hukuk</h2>
+        <p>Bu koşullar <span class="highlight">Türkiye Cumhuriyeti</span> yasalarına tabidir.</p>
+      </div>
+
+      <div class="section">
+        <h2>İletişim</h2>
+        <p>Sorularınız için:</p>
+        <div class="contact-box">
+          <p><span class="highlight">E-posta:</span> <a href="mailto:dev.egekaan@gmail.com">dev.egekaan@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Bu uygulamayı kullanarak yukarıdaki koşulları kabul etmiş sayılırsınız.</p>
+      <p style="margin-top: 12px;">© 2025 Hasılatım. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+
+  <script>
+    function showTab(tab) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      
+      document.getElementById(tab).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
